@@ -1,0 +1,47 @@
+{
+  "name": "tebex-plugin-api",
+  "version": "0.1.0",
+  "description": "Unofficial, fully typed TypeScript SDK for the Tebex Plugin (Game Server) API.",
+  "keywords": [
+    "game-server-api",
+    "plugin-api",
+    "sdk",
+    "tebex",
+    "typescript"
+  ],
+  "homepage": "https://github.com/heyxmirko/tebex-plugin-api#readme",
+  "bugs": "https://github.com/heyxmirko/tebex-plugin-api/issues",
+  "license": "MIT",
+  "author": "heyxmirko",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyxmirko/tebex-plugin-api.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "vp pack",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp check && vp test && vp pack"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0",
+    "vite-plus": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
