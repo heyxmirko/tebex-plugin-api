@@ -1,6 +1,6 @@
 {
   "name": "tebex-plugin-api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Unofficial, fully typed TypeScript SDK for the Tebex Plugin (Game Server) API.",
   "keywords": [
     "game-server-api",
